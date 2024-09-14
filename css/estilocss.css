@@ -61,6 +61,8 @@ main {
     height: 230px;
     object-fit: cover;
     margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .info h1 {
@@ -136,6 +138,8 @@ h1{
 
     background: url(mejores-desktops.png);
     border-radius: 20px 0px 0px 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .fotomaquillaje {
@@ -147,9 +151,12 @@ h1{
 
     background: url(42507.jpg);
     border-radius: 0px 20px 20px 0px;
+    max-width: 100%;
+    height: auto;
 }
 
 .texto1{
+    display: flex;
     position: absolute;
     width: 970px;
     height: 358px;
@@ -165,6 +172,7 @@ h1{
 }
 
 .texto2{
+    display: flex;
     position: absolute;
     width: 890px;
     height: 264px;
@@ -272,6 +280,8 @@ h1{
 
     background: url(office.jpg);
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .fotopython{
@@ -283,6 +293,8 @@ h1{
 
     background: url(450_1000.jpg);
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .fotohtmlcss{
@@ -294,4 +306,6 @@ h1{
 
     background: url(5206962_8bf4.jpg);
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
