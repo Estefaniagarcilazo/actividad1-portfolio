@@ -1,4 +1,4 @@
-body {
+body{
     font-family: 'Inter';
     background-color: #333333;
     color: #ffffff;
@@ -16,7 +16,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display:inline;
     justify-content: center;
 }
 
@@ -24,8 +24,8 @@ nav ul li {
     width: 200px;
     left: 26px;
     top: 46px;
-    margin: 0 20px;
-    display: flex;
+    margin: 0 50px;
+    display: inline;
     justify-content: center;
 }
 
@@ -46,19 +46,19 @@ main {
     padding: 50px 0;
 }
 
+/*home*/
 .perfil {
     display: inline-block;
     text-align: center;
     background-color: #A4C681;
     padding: 50px;
     border-radius: 10px;
-    width: 300px;
+    width: 30%;
 }
 
 .fotocv {
     border-radius: 50%;
-    width: 230px;
-    height: 230px;
+    width: 40%;
     object-fit: cover;
     margin-bottom: 20px;
     max-width: 100%;
@@ -98,70 +98,32 @@ footer {
     color: #CCCCCC;
 }
 
-.social-icons2 {
-    margin-top: 500px;
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra el contenido horizontalmente */
+    justify-content: center;
+    text-align: center;   /* Centra el texto */
+    padding: 20px;
 }
 
-.social-icons2 a {
-    color: #FFFFFF;
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-icons2 a:hover {
-    color: #CCCCCC;
-}
-
-
-/*sobre mi*/
-
-h1{
+.container h1{
     top: 80px;
     text-align: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 77px;
     color:azure;
     text-decoration: underline;
 
 }
 
-.fotocomputadora {
-    position: absolute;
-    width: 400px;
-    height: 254px;
-    left: 1050px;
-    top: 265px;
-
-    background: url(mejores-desktops.png);
-    border-radius: 20px 0px 0px 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.fotomaquillaje {
-    position: absolute;
-    width: 460px;
-    height: 226px;
-    left: 40px;
-    top: 490px;
-
-    background: url(42507.jpg);
-    border-radius: 0px 20px 20px 0px;
-    max-width: 100%;
-    height: auto;
-}
-
-.texto1{
-    display: flex;
-    position: absolute;
-    width: 970px;
-    height: 358px;
-    left: 38px;
-    top: 240px;
+/*sobre mi*/
+.container p{
     text-align: justify;
     font-family: 'Inter';
     font-style: normal;
@@ -171,21 +133,14 @@ h1{
     color: #D9D9D9;
 }
 
-.texto2{
-    display: flex;
-    position: absolute;
-    width: 890px;
-    height: 264px;
-    left: 530px;
-    top: 550px;
-    text-align:justify;
-    font-family:'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 36px;
-    color: #D9D9D9;
+.fotocomputadora{
+    max-width: 100%;  /* Ajusta la imagen para que no sea más ancha que su contenedor */
+    height: auto;
+    
+    width: 35%;
+    border-radius: 20px 0px 0px 20px;
 }
+
 
 /*curriculum*/
 .formatocv{
@@ -254,58 +209,14 @@ h1{
 }
 
 /*habilidades*/
-.habilidades{
-    position: absolute;
-    width: 823px;
-    height: 586px;
-    left: 55px;
-    top: 250px;
+
+.container ul li{
     text-align: left;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 350;
     font-size: 26px;
     line-height: 56px;
-
     color: #D9D9D9;
 
-}
-
-.foto-paqueteoffice{
-    position: absolute;
-    width: 250px;
-    height: 150px;
-    left: 700px;
-    top: 300px;
-
-    background: url(office.jpg);
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.fotopython{
-    position: absolute;
-    width: 270px;
-    height: 170px;
-    left: 1050px;
-    top: 400px;
-
-    background: url(450_1000.jpg);
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-.fotohtmlcss{
-    position: absolute;
-    width: 270px;
-    height: 160px;
-    left: 720px;
-    top: 550px;
-
-    background: url(5206962_8bf4.jpg);
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
 }
