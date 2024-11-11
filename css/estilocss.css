@@ -53,6 +53,7 @@ main {
     padding: 50px 0;
 }
 
+/*home*/
 .perfil {
     display: inline-block;
     text-align: center;
@@ -255,4 +256,52 @@ body.dark-mode .moon-icon {
     font-weight: 350;
     font-size: 26px;
     line-height: 56px;
+}
+
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ajuste de la cabecera */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ajuste del contenedor principal */
+    .perfil, .contact-form, .formatocv {
+        width: 80%; /* Ajusta el ancho en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .fotocv {
+        width: 70%; /* Ajusta la imagen del perfil en pantallas pequeñas */
+    }
+
+    /* Ajuste de los elementos de la lista en "habilidades" */
+    .container ul li {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    
+    /* Ajustes específicos para formularios de contacto */
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .perfil, .contact-form, .formatocv {
+        width: 60%; /* Ajusta el ancho en tabletas */
+    }
+
+    .fotocv {
+        width: 50%; /* Ajusta la imagen del perfil en tabletas */
+    }
 }
