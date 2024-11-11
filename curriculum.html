@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Curriculum Vitae</title>
+    <title>Portafolio de Estefanía Garcilazo</title>
     <link rel="stylesheet" href="css/estilocss.css">
 </head>
-<body>
+<body class="light-mode"> <!-- Clase inicial para el modo claro -->
     <header>
         <nav>
             <ul>
@@ -15,11 +15,14 @@
                 <li> <a href="curriculum.html">CURRICULUM</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="habilidades.html">HABILIDADES</a></li>
-            
             </ul>
         </nav>
+        <!-- Botón de alternancia de tema -->
+        <button id="toggle-theme" class="theme-button">
+            <span id="theme-icon" class="moon-icon"></span>
+        </button>
     </header>
-
+    
     <main>
         <div class="container">
             <h1>CURRICULUM VITAE</h1>
@@ -31,16 +34,17 @@
                 <li><a href="pdf/CV-Estefania Garcilazo.pdf" target="_blank">CV en Inglés</a></li>
             </ul>
         </div>
-        <button id="scrollToTop" style="color: #fff;">Top</button>
     </main>
     
+
     <footer>
         <div class="social-icons">
-            <a href="contacto.html">Contacto</a>
+            <a href="#">Contacto</a>
             <a href="https://github.com/Estefaniagarcilazo" target="_blank">GIT</a>
             <a href="http://linkedin.com/in/estefania-garcilazo-435a7728b" target="_blank">Linkedin</a>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
