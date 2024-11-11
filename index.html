@@ -6,7 +6,7 @@
     <title>Portafolio de Estefanía Garcilazo</title>
     <link rel="stylesheet" href="css/estilocss.css">
 </head>
-<body>
+<body class="light-mode"> <!-- Clase inicial para el modo claro -->
     <header>
         <nav>
             <ul>
@@ -15,31 +15,34 @@
                 <li> <a href="curriculum.html">CURRICULUM</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="habilidades.html">HABILIDADES</a></li>
-            
             </ul>
         </nav>
-
+        <!-- Botón de alternancia de tema -->
+        <button id="toggle-theme" class="theme-button">
+            <span id="theme-icon" class="moon-icon"></span>
+        </button>
     </header>
     
     <main>
         <div class="perfil">
-            <img src= "img/fotocv.jpg" class="fotocv" alt="fotocv">
+            <img src="img/fotocv.jpg" class="fotocv" alt="fotocv">
             <div class="info">
                 <p>Estefanía Garcilazo</p>
                 <p>20 años</p>
                 <p>Estudiante de Licenciatura en Sistemas en UADE</p>
                 <p>Empleada administrativa en Intradat</p>
             </div>
-            <button id="scrollToTop" style="color: #fff;">Top</button>
+        </div> 
     </main>
 
-    
     <footer>
         <div class="social-icons">
-            <a href="contacto.html">Contacto</a>
+            <a href="#">Contacto</a>
             <a href="https://github.com/Estefaniagarcilazo" target="_blank">GIT</a>
             <a href="http://linkedin.com/in/estefania-garcilazo-435a7728b" target="_blank">Linkedin</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
