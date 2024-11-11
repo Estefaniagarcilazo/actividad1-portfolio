@@ -220,3 +220,23 @@ footer {
     color: #D9D9D9;
 
 }
+
+#scrollToTop {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambia el color al pasar el cursor */
+#scrollToTop:hover {
+    background-color: #A5D4A5;
+}
