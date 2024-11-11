@@ -1,12 +1,25 @@
-body{
-    font-family: 'Inter';
-    background-color: #333333;
-    color: #ffffff;
+/* Estilos generales */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Modo claro */
+body.light-mode {
+    background-color: #333333;
+    color:#CCCCCC;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color:#CCCCCC;
+    color: #333333;
+}
+
+/* Estilos del header */
 header {
     background-color: #A4C681;
     padding: 20px 0;
@@ -16,37 +29,30 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display:inline;
-    justify-content: center;
+    display: inline;
 }
 
 nav ul li {
-    width: 200px;
-    left: 26px;
-    top: 46px;
-    margin: 0 50px;
     display: inline;
-    justify-content: center;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav ul li a:hover{
-    color: aliceblue;
+    color:#CCCCCC
 }
 
-
 main {
-    background-color: #333333;
     padding: 50px 0;
 }
 
-/*home*/
 .perfil {
     display: inline-block;
     text-align: center;
@@ -59,45 +65,59 @@ main {
 .fotocv {
     border-radius: 50%;
     width: 40%;
-    object-fit: cover;
     margin-bottom: 20px;
     max-width: 100%;
     height: auto;
 }
 
-.info h1 {
-    font-size: 24px;
-    color: #333333;
-    margin: 0 0 10px;
-}
-
+/* Información de perfil */
 .info p {
     font-size: 18px;
     color: #333333;
-    margin: 5px 0;
 }
 
+/* Estilos del footer */
 footer {
-    background-color: #333333;
     padding: 20px 0;
-    display: inline-flex;
-
-}
-.social-icons {
-    margin-top: 10px;
 }
 
 .social-icons a {
-    color: #FFFFFF;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 10px;
     text-decoration: none;
+    color:#627e46;
 }
 
 .social-icons a:hover {
-    color: #CCCCCC;
+    color:#3c4b2d;
 }
 
+
+/* Botón de tema */
+.theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Icono de la luna */
+.moon-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color:#CCCCCC;
+    transition: background-color 0.3s;
+}
+
+/* Icono de luna en modo oscuro */
+body.dark-mode .moon-icon {
+    background-color: #000000;
+}
 
 
 .container{
@@ -117,20 +137,20 @@ footer {
     font-weight: 200;
     font-size: 30px;
     line-height: 77px;
-    color:azure;
     text-decoration: underline;
 
 }
 
 /*sobre mi*/
 .container p{
-    text-align: justify;
+    text-align:center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 200;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
-    color: #D9D9D9;
+    margin: 30px;
+
 }
 
 .fotocomputadora{
@@ -141,12 +161,11 @@ footer {
     border-radius: 20px 0px 0px 20px;
 }
 
-
 /*curriculum*/
 .formatocv{
     display: inline-block;
     text-align: center;
-    background-color: #A4C681;
+    background-color:#A4C681;
     padding: 70px;
     border-radius: 10px;
     width: 300px;
@@ -155,17 +174,36 @@ footer {
     list-style: none;
 }
 
+.formatocv p{
+    color: #333333;
+    font-size: 24px;
+}
+
 .listacv li {
     list-style: none;
     text-align: center;
     color: azure;
 }
 
+.listacv li a{
+    color: #333333;
+}
+
+.listacv li a:hover{
+    color:#CCCCCC;
+}
+
+
+.divh1{
+    display: block;
+    text-align: center;
+}
+
 
 /*contacto*/
 .contact-form {
     background-color: #FFFFFF;
-    color: #87ab87;
+    color:#A4C681;
     border-radius: 15px;
     padding: 60px;
     margin: 20px auto;
@@ -195,7 +233,7 @@ footer {
 }
 
 .contact-form button {
-    background-color: #87ab87;
+    background-color:#A4C681;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -210,34 +248,11 @@ footer {
 }
 
 /*habilidades*/
-
 .container ul li{
-    text-align: left;
+    text-align:left;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 350;
     font-size: 26px;
     line-height: 56px;
-    color: #D9D9D9;
-
-}
-
-#scrollToTop {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #2b2b2b;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Cambia el color al pasar el cursor */
-#scrollToTop:hover {
-    background-color: #A5D4A5;
 }
