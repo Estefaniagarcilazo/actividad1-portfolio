@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
+    <title>Portafolio de Estefanía Garcilazo</title>
     <link rel="stylesheet" href="css/estilocss.css">
 </head>
-
-<body>
+<body class="light-mode"> <!-- Clase inicial para el modo claro -->
     <header>
         <nav>
             <ul>
@@ -17,37 +15,38 @@
                 <li> <a href="curriculum.html">CURRICULUM</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
                 <li><a href="habilidades.html">HABILIDADES</a></li>
-            
             </ul>
         </nav>
+        <!-- Botón de alternancia de tema -->
+        <button id="toggle-theme" class="theme-button">
+            <span id="theme-icon" class="moon-icon"></span>
+        </button>
     </header>
-
-    <main>
-        <div class="container">
-            <h1>SOBRE MÍ</h1>
-            <p>Mi nombre es Estefanía Garcilazo y soy estudiante de segundo año de Licenciatura en Gestión de Tecnología de
-            la Información en UADE.
-            Me apasiona el mundo de la tecnología, y mis intereses incluyen la programación, el testeo de aplicaciones y
-            el diseño web. Mi experiencia laboral me brindó habilidades y conocimientos en la gestión y control de
-            ventas, en la creación y gestión de las publicaciones en Mercado Libre y en atención al cliente.
-            Por otro lado, también me apasiona el mundo de la estética y el maquillaje. Como hobby maquillo a mis amigas,
+    
+    <div class="container">
+        <h1>SOBRE MÍ</h1>
+        <p>Mi nombre es Estefanía Garcilazo y soy estudiante de segundo año de Licenciatura en Gestión de Tecnología de
+        la Información en UADE.
+        Me apasiona el mundo de la tecnología, y mis intereses incluyen la programación, el testeo de aplicaciones y
+        el diseño web. Mi experiencia laboral me brindó habilidades y conocimientos en la gestión y control de
+        ventas, en la creación y gestión de las publicaciones en Mercado Libre y en atención al cliente.</p>
+        <p>Por otro lado, también me apasiona el mundo de la estética y el maquillaje. Como hobby maquillo a mis amigas,
             a conocidas y a mí misma. Veo cursos y tutoriales y aprendo cada vez más sobre este mundo, para poder llegar
-            a ser profesional y algún día poder brindar un servicio a las personas.
-            </p>
-            <img src="img/fotocomputadora.webp"class="fotocomputadora" alt="fotocomputadora">
-        </div>
-        <button id="scrollToTop" style="color: #fff;">Top</button>
-    </main>
+            a ser profesional y algún día poder brindar un servicio a las personas.</p>
+    
+        <img src="img/fotocomputadora.webp"class="fotocomputadora" alt="fotocomputadora">
+    </div>
+    
+</main>
 
     <footer>
         <div class="social-icons">
-            <a href="contacto.html">Contacto</a>
+            <a href="#">Contacto</a>
             <a href="https://github.com/Estefaniagarcilazo" target="_blank">GIT</a>
             <a href="http://linkedin.com/in/estefania-garcilazo-435a7728b" target="_blank">Linkedin</a>
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
-
 </html>
